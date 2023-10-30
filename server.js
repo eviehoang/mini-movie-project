@@ -39,6 +39,18 @@ app.get('/api/movies', (req, res) => {
     });
 });
 
+app.get('/api/movie-reviews', (req, res) => {
+    db.query('SELECT review FROM movies_db.reviews JOIN movie_name', function (err, results) {
+        if (err) {
+            console.error(err);
+            res.status(500).json({ error: 'An error occurred while fetching data from the database' });
+        } else {
+            console.log(results);
+            res.json(results);
+        }
+    });
+});
+
 app.listen(PORT, (err) => {
     if (err) {
         console.error('Server startup error: ' + err);
