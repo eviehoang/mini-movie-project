@@ -1,9 +1,9 @@
-INSERT INTO movies (id, movie_name)
-VALUES (1, "Twilight"),
-       (2, "Spiderman"),
-       (3, "Batman"),
-       (4, "Barbie"),
-       (5), "Avatar";
+INSERT INTO movies (movie_name)
+VALUES ("Twilight"),
+       ("Spiderman"),
+       ( "Batman"),
+       ( "Barbie"),
+       ("Avatar");
 
 INSERT INTO reviews (review)
 VALUES ("Horrible"),

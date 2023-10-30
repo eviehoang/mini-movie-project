@@ -11,8 +11,14 @@ const db = mysql.createConnection(
   {
     host: 'localhost',
     user: 'root',
-    password: 'password!',
+    password: 'password',
     database: 'movies_db'
   },
   console.log(`Connected to the books_db database.`)
 );
+
+
+// render the list
+db.query('SELECT * FROM movies_db', function (err, results) {
+    console.log(results);
+  });

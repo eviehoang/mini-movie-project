@@ -5,12 +5,12 @@ USE movies_db;
 
 CREATE TABLE movies (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  movie_name INT NOT NULL
+  movie_name  VARCHAR(30) NOT NULL
   
 );
 
 CREATE TABLE reviews (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  review INT NOT NULL
+  review VARCHAR(30) NOT NULL
   
 );
